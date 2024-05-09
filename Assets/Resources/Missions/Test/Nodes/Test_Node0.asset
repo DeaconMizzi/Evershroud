@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68cc7174b3bbca64c896555de78668b1, type: 3}
+  m_Name: Test_Node0
+  m_EditorClassIdentifier: 
+  nextNode: []
+  extraText: {fileID: 0}
+  objectsActivated: []
+  isFinal: 0
+  nodeObjectives:
+  - keyName: Test
+    isCompleted: 0
+    maxItems: 5
+    actualItems: 2
+    description: test
+    hiddenObjective: 0
+    autoExitOnCompleted: 0
+  GUID: 17238134-d8e7-47e2-800c-3c23665ba8ba
+  position: {x: 401.6, y: 175.2}
