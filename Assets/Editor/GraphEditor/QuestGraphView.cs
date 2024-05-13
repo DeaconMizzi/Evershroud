@@ -11,7 +11,7 @@ namespace QuestSystem.QuestEditor
 {
     public class QuestGraphView : GraphView
     {
-        public string misionName;
+        public string questName;
 
         private QuestNodeSearchWindow _searchWindow;
         public Quest questRef;
@@ -71,17 +71,17 @@ namespace QuestSystem.QuestEditor
             var box = new Box();
 
             //
-            var misionName = new TextField("Quest Name:")
+            var questName = new TextField("Quest Name:")
             {
                 value = "Quest Name..."
             };
 
-            misionName.RegisterValueChangedCallback(evt =>
+            questName.RegisterValueChangedCallback(evt =>
             {
                 node.misionName = evt.newValue;
             });
 
-            box.Add(misionName);
+            box.Add(questName);
 
             //
             var isMain = new Toggle();

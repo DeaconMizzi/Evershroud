@@ -6136,7 +6136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc13c535c5da3374c992e4fab47b0d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questToGive: {fileID: 0}
+  questToGive: {fileID: 11400000, guid: 46ce50f2b646c0345a03393aea1181e5, type: 2}
   extraText: {fileID: 0}
 --- !u!1 &341155878
 GameObject:
@@ -8009,7 +8009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentstate: 0
-  speed: 12
+  speed: 8
   hearts:
   - {fileID: 1534533041}
   - {fileID: 1429899837}

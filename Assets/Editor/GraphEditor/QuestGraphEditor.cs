@@ -40,7 +40,7 @@ namespace QuestSystem.QuestEditor
             };
 
             if (questForGraph != null)
-                _questGraph.misionName = questForGraph.misionName;
+                _questGraph.questName = questForGraph.misionName;
 
             _questGraph.StretchToParentSize();
 

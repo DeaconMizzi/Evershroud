@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff56e97046007a429e92ccbc5493d88, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: 
-  firtsNode: {fileID: 0}
+  firtsNode: {fileID: 11400000, guid: b47d6e8f423871544974c48d8cbb8a5f, type: 2}
   nodeActual: {fileID: 0}
   state: 
   limitDay: 0
   startDay: 0
   misionName: Test
   isMain: 0
-  nodeLinkData: []
+  nodeLinkData:
+  - baseNodeGUID: 66258852-cb45-4724-80e2-38870fda3356
+    portName: Next
+    targetNodeGUID: 17238134-d8e7-47e2-800c-3c23665ba8ba
