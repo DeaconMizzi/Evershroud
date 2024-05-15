@@ -14,8 +14,6 @@ namespace QuestSystem
         public NodeQuest firtsNode;
         public NodeQuest nodeActual;
         public List<int> state;
-        public int limitDay;
-        public int startDay;
         public string misionName;
         public bool isMain;
 

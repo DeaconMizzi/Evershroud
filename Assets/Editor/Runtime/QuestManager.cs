@@ -70,7 +70,7 @@ namespace QuestSystem
 
         public void Save()
         {
-            //Comprovar que se guarde compilado
+           
 #if !UNITY_EDITOR
             data = new QuestLogSaveData(misionLog);
             QuestSaveSystem.Save(data);
@@ -80,8 +80,8 @@ namespace QuestSystem
 
 
         /// <summary>
-        /// Formats the current mision information like this:
-        /// Mision Name /n
+        /// Formats the current quest information like this:
+        /// Quest Name /n
         ///    /tab Objective description 0/1
         /// </summary>
         /// <returns> Returns the string formated </returns>

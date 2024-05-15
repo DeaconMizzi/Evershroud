@@ -16,8 +16,6 @@ namespace QuestSystem.SaveSystem
             info.AddValue("firtsNode", q.firtsNode);
             info.AddValue("nodeActual", q.nodeActual);
             info.AddValue("state", q.state);
-            info.AddValue("limitDay", q.limitDay);
-            info.AddValue("startDay", q.startDay);
             info.AddValue("misionName", q.misionName);
         }
 
@@ -28,8 +26,6 @@ namespace QuestSystem.SaveSystem
             q.firtsNode = (NodeQuest)info.GetValue("firtsNode", typeof(NodeQuest));
             q.firtsNode = (NodeQuest)info.GetValue("nodeActual", typeof(NodeQuest));
             q.state = (List<int>)info.GetValue("state", typeof(List<int>));
-            q.limitDay = (int)info.GetValue("limitDay", typeof(int));
-            q.startDay = (int)info.GetValue("startDay", typeof(int));
             q.misionName = (string)info.GetValue("misionName", typeof(string));
 
             obj = q;

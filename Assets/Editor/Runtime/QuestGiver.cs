@@ -35,19 +35,6 @@ namespace QuestSystem
             //else return;
         }
 
-
-        //Delete the ones you don't want to use
-
-        private void OnTriggerEnter(Collider other)
-        {
-            resultOfEnter(true, other.tag);
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            resultOfEnter(false, other.tag);
-        }
-
         private void OnTriggerEnter2D(Collider2D other)
         {
             resultOfEnter(true, other.tag);

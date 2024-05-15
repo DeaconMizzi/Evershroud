@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68cc7174b3bbca64c896555de78668b1, type: 3}
-  m_Name: Test_Node0
+  m_Name: Test_Node1
   m_EditorClassIdentifier: 
   nextNode: []
   extraText: {fileID: 0}
   objectsActivated: []
   isFinal: 0
   nodeObjectives:
-  - keyName: Pot
+  - keyName: TalkSign
     isCompleted: 0
-    maxItems: 10
+    maxItems: 5
     actualItems: 0
-    description: You're a Pot Harry
+    description: Test woo
     hiddenObjective: 0
     autoExitOnCompleted: 0
-  GUID: ced1d0a4-e2fb-45e8-a5b8-dfa0be9d641e
-  position: {x: 638.4, y: 186.4}
+  GUID: 17238134-d8e7-47e2-800c-3c23665ba8ba
+  position: {x: 308.8, y: 166.4}
