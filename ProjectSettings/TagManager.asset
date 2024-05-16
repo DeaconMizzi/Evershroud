@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemy
-  - sword
+  - Character
+  - DialogueCanvas
+  - Enemy
+  - Location
   - breakable
+  - sword
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -45,8 +49,8 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: signs
-    uniqueID: 4025905497
+    uniqueID: 1111579887
     locked: 0
-  - name: 'Player '
-    uniqueID: 1585187211
+  - name: Player
+    uniqueID: 571515211
     locked: 0
