@@ -14,8 +14,21 @@ public class GameManager : MonoBehaviour
 
     private void OnEnemyKilled(EnemyLog enemy)
     {
-        // Handle enemy killed event, update score, etc.
-        Debug.Log($"Enemy killed: {enemy.EnemyName}");
-        // Update your game state, score, etc. here
+        if (enemy == null)
+        {
+            Debug.LogError("Enemy is null in OnEnemyKilled.");
+            return;
+        }
+
+        if (string.IsNullOrEmpty(enemy.EnemyName))
+        {
+            Debug.LogError("Enemy name is null or empty.");
+        }
+        else
+        {
+            // Handle enemy killed event, update score, etc.
+            Debug.Log($"Enemy killed: {enemy.EnemyName}");
+            // Update your game state, score, etc. here
+        }
     }
 }

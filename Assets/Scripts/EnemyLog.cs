@@ -52,6 +52,14 @@ public class EnemyLog : MonoBehaviour
     {
         health = maxHealth.initialValue;
         swordhit = GetComponent<AudioSource>();
+        // Debug log to check initialization
+        Debug.Log($"Initialized enemy: {enemyName}");
+    }
+
+    public void Initialize(string name)
+    {
+        enemyName = name;
+        Debug.Log($"Enemy name set to: {enemyName}");
     }
 
     private void TakeDamage(float damage)
@@ -61,6 +69,7 @@ public class EnemyLog : MonoBehaviour
 
         if (health <= 0)
         {
+            Debug.Log($"Enemy {enemyName} is about to be killed.");
             Messenger.Broadcast<EnemyLog>("Enemy Killed", this);
             enemycount = enemycount - 1;
             Destroy(this.gameObject);

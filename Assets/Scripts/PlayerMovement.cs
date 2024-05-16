@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("Attacking", false);
         yield return new WaitForSeconds(.3f);
         currentstate = PlayerState.walk;
-        walkSource.Play();
+        //walkSource.Play();
     }
 
     void UpdateAnimationAndMove()

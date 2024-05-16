@@ -200,7 +200,7 @@ MonoBehaviour:
   currentState: 0
   maxHealth: {fileID: 11400000, guid: cadbf933b6f9c994ca6b09abc3b25709, type: 2}
   health: 0
-  enemyName: 
+  enemyName: Log
   baseDamage: 1
   moveSpeed: 2
   enemycount: 10
