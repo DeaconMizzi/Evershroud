@@ -77,7 +77,7 @@ public class NodeEditorQuest : Node_Editor
 
 		EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
 
-		DisplayRequiredGameStates();
+
 	}
 
 	/// <summary>
@@ -510,8 +510,7 @@ public class NodeEditorQuest : Node_Editor
 		string[] folders = path.Split(new char[] { '/' }, StringSplitOptions.None);
 		openedCanvas = folders[folders.Length - 1];
 		openedCanvasPath = path;
-
-		InitGameStateData();
+		
 
 		Repaint();
 		AssetDatabase.Refresh();
@@ -599,7 +598,6 @@ public class NodeEditorQuest : Node_Editor
 		nodeCanvas.requiredQuests = new List<QuestAsset>();
 		nodeCanvas.numberOfObjectivesToCollect = new List<int>();
 		nodeCanvas.objectivePaths = new List<ObjectivePath>();
-		nodeCanvas.requiredGameStates = new List<GameStateName>();
 		openedCanvas = "New Canvas";
 		openedCanvasPath = "";
 
@@ -616,7 +614,6 @@ public class NodeEditorQuest : Node_Editor
 		deleteButton = Resources.Load("Sprites/EditorUI/DeleteButton") as Texture;
 		upButton = Resources.Load("Sprites/EditorUI/UpArrow") as Texture;
 		downButton = Resources.Load("Sprites/EditorUI/DownArrow") as Texture;
-
-		InitGameStateData();
+		
 	}
 }

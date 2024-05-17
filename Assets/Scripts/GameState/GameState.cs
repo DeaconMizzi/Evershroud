@@ -19,7 +19,7 @@ public class GameState : MonoBehaviour
 	private void Awake()
 	{
 		InitSingleton();
-		LoadStateData();
+
 		InitListeners();
 	}
 
@@ -67,16 +67,7 @@ public class GameState : MonoBehaviour
 	/// <summary>
 	/// Loads and parses the data from the GameStatData Scriptable Object Asset.
 	/// </summary>
-	private void LoadStateData()
-	{
-		GameStateAsset gameStateAsset = Resources.Load<GameStateAsset>(gameStateAssetDirectory);
 
-		gameStates = new Dictionary<string, bool>();
-
-		// Initialize hash table with all game states set to false.
-		foreach (GameStateName state in gameStateAsset.gameStates)
-			gameStates.Add(state.eventName, false);
-	}
 
 	/// <summary>
 	/// Returns true if stateName has been unlocked.

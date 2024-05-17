@@ -60,8 +60,7 @@ public class NodeEditorDialogue : Node_Editor
 		GUILayout.Space(15);
 
 		EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
-
-		DisplayRequiredGameStates();
+		
 
 		EditorUtility.SetDirty(nodeCanvas);
 	}
@@ -139,7 +138,6 @@ public class NodeEditorDialogue : Node_Editor
 	public override void NewNodeCanvas()
 	{
 		nodeCanvas = ScriptableObject.CreateInstance<DialogueNodeCanvas>();
-		_nodeCanvas.requiredGameStates = new List<GameStateName>();
 		_nodeCanvas.nodes = new List<Node>();
 		_nodeCanvas.choiceNodes = new List<Node>();
 		_nodeCanvas.choiceNodeNames = new List<string>();
@@ -148,7 +146,6 @@ public class NodeEditorDialogue : Node_Editor
 		openedCanvasPath = "";
 		defaultPath = "Assets/Resources/Dialogue/";
 		deleteButton = Resources.Load("Sprites/EditorUI/DeleteButton") as Texture;
-		InitGameStateData();
 	}
 
 	/// <summary>
@@ -194,7 +191,6 @@ public class NodeEditorDialogue : Node_Editor
 		openedCanvas = folders[folders.Length - 1];
 		openedCanvasPath = path;
 
-		InitGameStateData();
 
 		Repaint();
 		AssetDatabase.Refresh();

@@ -25,7 +25,6 @@ public class Node_Canvas_Object : ScriptableObject
 	public List<bool> requiredGameStateSelections;
 
 	/// <summary> The required game states needed to activate this interaction. </summary>
-	public List<GameStateName> requiredGameStates;
 
 	public Vector2 scrollOffset = new Vector2 (); // The Scroll offset
 	public float zoom = 2; // Zoom Factor; (1-5)/2: One step to zoom in, three to zoom out. Not implemented yet!
