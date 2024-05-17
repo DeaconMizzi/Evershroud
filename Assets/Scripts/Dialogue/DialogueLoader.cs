@@ -167,10 +167,6 @@ public class DialogueLoader : MonoBehaviour
             // Parse required quests
             List<string> tempRequiredStates = new List<string>();
 
-            foreach (GameStateName stateName in fsm.requiredGameStates)
-            {
-                tempRequiredStates.Add(stateName.eventName);
-            }
 
             newFSM.AddRequiredGameStates(tempRequiredStates);
 

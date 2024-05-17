@@ -76,15 +76,6 @@ public abstract class Node_Editor : EditorWindow
 	/// <summary> used for tracking how many choice states we have. This is needed for passing control back to choice nodes </summary>
 	protected int numberOfChoiceStates;
 
-	/// <summary> Used for adding and removing game state buttons. </summary>
-	protected bool addRequiredGameState, removeRequiredGameState;
-
-	/// <summary> The game state asset that's created in this editor window. </summary>
-	protected GameStateAsset gameStateAsset;
-
-	/// <summary> List of game state names. Populated using the main Game State Asset file. </summary>
-	protected List<string> requiredGameStateNames;
-
 	/// <summary> Texture for the delete button that shows up next to certain items on the side window. </summary>
 	protected Texture deleteButton, upButton, downButton;
 
@@ -147,83 +138,7 @@ public abstract class Node_Editor : EditorWindow
 		GUILayout.EndArea();
 	}
 
-	/// <summary>
-	/// Loads the main game state asset into memory and adds all the Game States to the requiredGameStateNames list.
-	/// </summary>
-	protected void InitGameStateData()
-	{
-		// Modify this file path if needed.
-		gameStateAsset = Resources.Load<GameStateAsset>("GameState/GameStateData");
-
-		// Initialize list of game state names. These names will be displayed on the side window.
-		requiredGameStateNames = new List<string>();
-
-		// Initialize the list of bools for which game states are selected as prerequisite states for this interaction.
-		_nodeCanvas.requiredGameStateSelections = new List<bool>();
-
-		// Iterate over the game states and populate the list of names and bools.
-		foreach (GameStateName state in gameStateAsset.gameStates)
-		{
-			requiredGameStateNames.Add(state.eventName);
-			_nodeCanvas.requiredGameStateSelections.Add(false);
-		}
-	}
-
-	/// <summary>
-	/// Draws the game state names on the side window. Each name has a toggle box next to it for choosing it as 
-	/// a prereq or not.
-	/// </summary>
-	protected void DisplayRequiredGameStates()
-	{
-		// header text
-		GUILayout.Label("Required Game States");
-
-		GUILayout.Space(20);
-
-		EditorGUIUtility.labelWidth = 250;
-
-		// Draw the game state names and toggle boxes.
-		for (int i = 0; i < gameStateAsset.gameStates.Count; i++)
-		{
-			GUILayout.BeginHorizontal();
-
-			// Draw a toggle box with the name of the state next to it.
-			nodeCanvas.requiredGameStateSelections[i] = EditorGUILayout.Toggle(new GUIContent(gameStateAsset.gameStates[i].eventName, "Select this box to add this game state to the list of required states"), nodeCanvas.requiredGameStateSelections[i]);
-
-			if (nodeCanvas.requiredGameStateSelections[i])
-				AddRequiredGameState(gameStateAsset.gameStates[i]);
-			else
-				RemoveRequiredGameState(gameStateAsset.gameStates[i]);
-
-			GUILayout.EndHorizontal();
-		}
-		EditorGUIUtility.labelWidth = 0;
-	}
-
-	/// <summary>
-	/// Adds a game state to the list of prerequisite game states.
-	/// </summary>
-	/// <param name="gameState">The game state to add.</param>
-	protected void AddRequiredGameState(GameStateName gameState)
-	{
-		if (nodeCanvas.requiredGameStates.Contains(gameState))
-			return;
-
-		nodeCanvas.requiredGameStates.Add(gameState);
-	}
-
-	/// <summary>
-	/// Removes a game state from the list of prerequisite game states.
-	/// </summary>
-	/// <param name="gameState">The game state to remove.</param>
-	protected void RemoveRequiredGameState(GameStateName gameState)
-	{
-		if (!nodeCanvas.requiredGameStates.Contains(gameState))
-			return;
-
-		nodeCanvas.requiredGameStates.Remove(gameState);
-	}
-
+	
 	/// <summary>
 	/// Draws the nodes in the node editor window.
 	/// </summary>
