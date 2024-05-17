@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="21958167-0418-4b3c-9e78-6208be160746" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Evershroud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Evershroud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Dialogue/BraidPlayer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Dialogue/BraidPlayer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyLog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Log.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Log.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyLog.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyLog.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/Knockback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Knockback.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/EnemyObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/EnemyObjective.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/Quest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest/QuestObjective.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
       <updated>1715965733517</updated>
       <workItem from="1715965735248" duration="6250000" />
       <workItem from="1715973607240" duration="4000" />
-      <workItem from="1715973619401" duration="3922000" />
+      <workItem from="1715973619401" duration="1261000" />
     </task>
     <servers />
   </component>

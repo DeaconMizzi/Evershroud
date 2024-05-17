@@ -67,7 +67,7 @@ MonoBehaviour:
   numberOfObjectivesToCollect: 
   requiredQuests: []
   newQuest: {fileID: 11400000, guid: fedeb0bd8a3d0134da4447a2f17014ef, type: 2}
-  questGiver: {fileID: 1611766483522690, guid: e980799e1ae36f7468f2e975cfc635d3, type: 3}
+  questGiver: {fileID: 1269463871297686, guid: 2a36daffaaaf2f64c9802bc58afa6980, type: 3}
 --- !u!114 &4562224460203112901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   isFinalState: 1
   previousChoiceNode: {fileID: 0}
   speakers:
-  - {fileID: 1611766483522690, guid: e980799e1ae36f7468f2e975cfc635d3, type: 3}
+  - {fileID: 1269463871297686, guid: 2a36daffaaaf2f64c9802bc58afa6980, type: 3}
   speakerImages:
   - {fileID: 0}
   dialogues:
