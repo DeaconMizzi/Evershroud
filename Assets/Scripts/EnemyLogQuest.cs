@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//public enum EnemyState
-//{
- //   idle,
-   // walk,
-    //attack,
-    //stagger
-//}
-
-public class EnemyLog : MonoBehaviour
+public enum EnemyState
 {
-    [SerializeField]
-    protected EnemyState currentState;
+    idle,
+    walk,
+    attack,
+    stagger
+}
+
+public class EnemyLogQuest : Enemy
+{
+    [SerializeField] 
+    private EnemyState currentState;
     [SerializeField]
     protected FloatValue maxHealth;
     [SerializeField]
@@ -70,7 +70,7 @@ public class EnemyLog : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log($"Enemy {enemyName} is about to be killed.");
-            Messenger.Broadcast<EnemyLog>("Enemy Killed", this);
+            Messenger.Broadcast<Enemy>("Enemy Killed", this);
             enemycount = enemycount - 1;
             Destroy(this.gameObject);
             ScoreScript.scoreValue += 1;
@@ -110,7 +110,7 @@ public class EnemyLog : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
-            Messenger.Broadcast<EnemyLog>("Enemy Killed", this);
+            Messenger.Broadcast<Enemy>("Enemy Killed", this);
         }
     }
 }

@@ -18,17 +18,7 @@ public class Enemy : MonoBehaviour
 
 	[SerializeField]
 	protected string name;
-
-	void Start ()
-	{
-		
-	}
-
-	void Update ()
-	{
-		
-	}
-
+	
 
 	/// <summary>
 	/// Kills enemy and sends a message to quest objectives for updating.

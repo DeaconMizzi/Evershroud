@@ -16,24 +16,7 @@ public class LocationObjective : QuestObjective
         objectiveObject = newLocation;
         hasDestinationBeenReached = false;
     }
-
-    /// <summary>
-    /// Initializes the objective by subscribing to the "Location Reached" message.
-    /// </summary>
-    public override void InitializeObjective()
-    {
-        Messenger.AddListener<GameObject>("Location Reached", LocationReached);
-        Debug.Log("Location Objective initialized.");
-    }
-
-    /// <summary>
-    /// Cleans up the objective by unsubscribing from the "Location Reached" message.
-    /// </summary>
-    public override void CleanupObjective()
-    {
-        Messenger.RemoveListener<GameObject>("Location Reached", LocationReached);
-    }
-
+    
     /// <summary>
     /// Checks if the message we received was for this objective's location. Sets hasDestinationBeenReached to true if so.
     /// </summary>

@@ -408,8 +408,7 @@ MonoBehaviour:
   requiredQuests:
   - {fileID: 11400000, guid: d2259364cad59ae4894c157e42e7515b, type: 2}
   newQuest: {fileID: 11400000, guid: 162e32d3cd65efb4fbad1efbe3e7388e, type: 2}
-  questGiver: {fileID: 1469596417465038535, guid: 0e3a556a949a125419692d08ce141139,
-    type: 3}
+  questGiver: {fileID: 1611766483522690, guid: e980799e1ae36f7468f2e975cfc635d3, type: 3}
 --- !u!114 &1605668343942513547
 MonoBehaviour:
   m_ObjectHideFlags: 0

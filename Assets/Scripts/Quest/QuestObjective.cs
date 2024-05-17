@@ -19,7 +19,7 @@ public abstract class QuestObjective
     /// <summary>
     /// Returns the description of the objective.
     /// </summary>
-    public virtual string GetObjectiveDescription()
+    public string GetObjectiveDescription()
     {
         return objectiveDescription;
     }
@@ -27,7 +27,7 @@ public abstract class QuestObjective
     /// <summary>
     /// Sets this quest objective as the active objective in this objective path.
     /// </summary>
-    public virtual void SetActiveObjective()
+    public void SetActiveObjective()
     {
         objectiveActive = true;
     }
@@ -36,7 +36,7 @@ public abstract class QuestObjective
     /// Sets the objective that comes after this objective. When this objective is complete, the next objective becomes active.
     /// </summary>
     /// <param name="newNextObjective">The objective this objective unlocks upon completion.</param>
-    public virtual void SetNextObjective(QuestObjective newNextObjective)
+    public void SetNextObjective(QuestObjective newNextObjective)
     {
         nextObjective = newNextObjective;
     }
@@ -44,7 +44,7 @@ public abstract class QuestObjective
     /// <summary>
     /// Returns the objective game object.
     /// </summary>
-    public virtual GameObject GetObjectiveObject()
+    public GameObject GetObjectiveObject()
     {
         return objectiveObject;
     }
@@ -54,17 +54,7 @@ public abstract class QuestObjective
     /// </summary>
     public abstract bool IsComplete();
 
-    /// <summary>
-    /// Initializes the objective.
-    /// </summary>
-    public abstract void InitializeObjective();
-
-    /// <summary>
-    /// Cleans up the objective.
-    /// </summary>
-    public abstract void CleanupObjective();
-
-    public virtual void TransferOwner(GameObject newOwner)
+    public void TransferOwner(GameObject newOwner)
     {
         questOwner = newOwner;
     }
