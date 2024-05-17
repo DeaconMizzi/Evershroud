@@ -2,31 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Log : EnemyLog {
-
+public class Log : EnemyLog
+{
     private Rigidbody2D myRigidbody;
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
     public Transform homePosition;
     public Animator anim;
-  
-	// Use this for initialization
-	void Start () {
+
+    void Start()
+    {
         currentState = EnemyState.idle;
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+    }
+
+    void FixedUpdate()
+    {
         CheckDistance();
-	}
+    }
 
     void CheckDistance()
     {
-        if(Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
+        if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
             if (currentState == EnemyState.idle || currentState == EnemyState.walk && currentState != EnemyState.stagger)
             {
@@ -56,11 +56,13 @@ public class Log : EnemyLog {
             if (direction.x > 0)
             {
                 SetAnimFloat(Vector2.right);
-            }else if (direction.x < 0)
+            }
+            else if (direction.x < 0)
             {
                 SetAnimFloat(Vector2.left);
             }
-        }else if (Mathf.Abs(direction.x) < Mathf.Abs(direction.y))
+        }
+        else if (Mathf.Abs(direction.x) < Mathf.Abs(direction.y))
         {
             if (direction.y > 0)
             {
@@ -75,9 +77,29 @@ public class Log : EnemyLog {
 
     private void ChangeState(EnemyState newState)
     {
-        if(currentState != newState)
+        if (currentState != newState)
         {
             currentState = newState;
+        }
+    }
+
+    private void Die()
+    {
+        if (QuestHandler.Instance != null)
+        {
+            QuestHandler.Instance.NotifyEnemyKilled(enemyName);
+        }
+        Destroy(gameObject, 1f); // Delay to allow death animation to play
+    }
+
+    internal override void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0 && !isDead)
+        {
+            isDead = true;
+            anim.SetTrigger("die");
+            Die();
         }
     }
 }
