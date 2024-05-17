@@ -74,7 +74,6 @@ public class Quest
         }
         return true;
     }
-
     public bool IsComplete()
     {
         foreach (var objectivePath in objectives)

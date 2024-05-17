@@ -29,9 +29,16 @@ public class PlayerMovement : MonoBehaviour
     private bool lockPlayerMovement;
     private bool moving = false;
 
+    private GameManager gameManager;
+
     // Use this for initialization
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene.");
+        }
         walkSource = GetComponent<AudioSource>();
         playerhealth = 5;
         if (playerhealth == 0)
@@ -55,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
         if (playerhealth <= 0)
         {
             PlayerDies();
+            gameManager.Lose();
+
         }
 
         change = Vector3.zero;
@@ -88,7 +97,6 @@ public class PlayerMovement : MonoBehaviour
     private void PlayerDies()
     {
         gameObject.SetActive(false);
-        SceneManager.LoadScene("Lose");
         playerhealth = maxhealth;
     }
 

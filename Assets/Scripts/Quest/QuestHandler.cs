@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class QuestHandler : MonoBehaviour
 {
-    public static QuestHandler Instance { get; private set; }
-
     private Dictionary<string, Quest> quests;
     private Dictionary<string, Quest> completedQuests;
     private Dictionary<string, QuestGiver> questGivers;
@@ -29,17 +27,6 @@ public class QuestHandler : MonoBehaviour
 
     void Start()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);  // Ensure the handler persists across scenes if needed
-        }
-        else
-        {
-            Destroy(gameObject);  // Ensure only one instance exists
-            return;
-        }
-
         quests = new Dictionary<string, Quest>();
         completedQuests = new Dictionary<string, Quest>();
         questGivers = new Dictionary<string, QuestGiver>();
@@ -162,23 +149,5 @@ public class QuestHandler : MonoBehaviour
     {
         if (nearbyQuestGivers.Contains(collision.gameObject))
             nearbyQuestGivers.Remove(collision.gameObject);
-    }
-
-    // New method to notify when an enemy is killed
-    public void NotifyEnemyKilled(string enemyName)
-    {
-        foreach (Quest quest in quests.Values)
-        {
-            foreach (List<QuestObjective> objectivePath in quest.GetObjectives())
-            {
-                foreach (QuestObjective objective in objectivePath)
-                {
-                    if (objective is EnemyObjective enemyObjective && enemyObjective.enemy.enemyName == enemyName)
-                    {
-                        enemyObjective.EnemyKilled();
-                    }
-                }
-            }
-        }
     }
 }

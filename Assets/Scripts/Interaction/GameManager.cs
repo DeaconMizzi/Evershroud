@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject mainMenu;
     public GameObject Game; 
+    public GameObject loseGame;
+    public GameObject winGame;
 
     private void Start()
     {
@@ -16,6 +18,18 @@ public class GameManager : MonoBehaviour
     {
         mainMenu.SetActive(false);
         Game.SetActive(true);
+    }
+
+    public void Win()
+    {
+        Game.SetActive(false);
+        winGame.SetActive(true);
+    }
+    
+    public void Lose()
+    {
+        Game.SetActive(false);
+        loseGame.SetActive(true);
     }
     private void OnEnable()
     {

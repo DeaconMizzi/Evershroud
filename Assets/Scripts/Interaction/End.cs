@@ -7,10 +7,15 @@ using UnityEngine.UI;
 public class End : MonoBehaviour
 {
 
+    private GameManager gameManager;
     // Use this for initialization
     void Start()
     {
-
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene.");
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +27,7 @@ public class End : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Win"); ;
+             gameManager.Win();
         }
     }
 }
