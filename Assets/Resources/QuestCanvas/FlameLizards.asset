@@ -28,7 +28,7 @@ MonoBehaviour:
   - Choice State 1
   requiredGameStateSelections: 
   requiredGameStates: []
-  scrollOffset: {x: -61, y: -59.5}
+  scrollOffset: {x: -64.19971, y: 35.70044}
   zoom: 2
   questName: Logs
   questObjectives: []
@@ -67,10 +67,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 1188
-    y: 3.5
+    x: 1184.7993
+    y: 98.70004
     width: 350
-    height: 570
+    height: 575
   Inputs:
   - {fileID: 114878893805484968}
   Outputs:
@@ -86,7 +86,7 @@ MonoBehaviour:
   speakerImages:
   - {fileID: 0}
   dialogues:
-  - Sounds good.
+  - I got this!
   styles:
   - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
@@ -110,10 +110,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 752
-    y: 110
+    x: 748.7991
+    y: 205.20001
     width: 350
-    height: 570
+    height: 575
   Inputs:
   - {fileID: 114845834959199582}
   Outputs:
@@ -129,7 +129,7 @@ MonoBehaviour:
   speakerImages:
   - {fileID: 0}
   dialogues:
-  - No thanks. You didn't say please.
+  - No thanks. I'm not ready...
   styles:
   - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
@@ -153,10 +153,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 938.5
-    y: 750.5
+    x: 935.29895
+    y: 845.7001
     width: 350
-    height: 500
+    height: 505
   Inputs:
   - {fileID: 114424008213374286}
   Outputs:
@@ -172,7 +172,7 @@ MonoBehaviour:
   speakerImages:
   - {fileID: 0}
   dialogues:
-  - That's Right, ty!
+  - Oh yea, thanks!
   styles:
   - {fileID: 21300000, guid: 811ed2b985c3ad54d8696b0c53c49e87, type: 3}
   transitions: 
@@ -197,10 +197,10 @@ MonoBehaviour:
   body: {fileID: 114859120140942640}
   rect:
     serializedVersion: 2
-    x: 734
-    y: 1173.5
-    width: 120
-    height: 17
+    x: 727.7998
+    y: 1268.7004
+    width: 123
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114185885385528282
@@ -218,10 +218,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 541
-    y: 166.5
-    width: 109
-    height: 17
+    x: 534.79956
+    y: 265.70004
+    width: 112
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114261657743085000
@@ -239,10 +239,10 @@ MonoBehaviour:
   body: {fileID: 114859120140942640}
   rect:
     serializedVersion: 2
-    x: 504
-    y: 1173.5
-    width: 143
-    height: 17
+    x: 500.79977
+    y: 1268.7004
+    width: 147
+    height: 18
   connection: {fileID: 114549246657969926}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114269887774929676
@@ -260,10 +260,10 @@ MonoBehaviour:
   body: {fileID: 114113850668703152}
   rect:
     serializedVersion: 2
-    x: 982
-    y: 152
-    width: 120
-    height: 17
+    x: 975.7991
+    y: 247.20001
+    width: 123
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114299010747470932
@@ -281,10 +281,10 @@ MonoBehaviour:
   body: {fileID: 114455129295374188}
   rect:
     serializedVersion: 2
-    x: 717.5
-    y: 670.5
-    width: 120
-    height: 17
+    x: 711.29956
+    y: 765.70056
+    width: 123
+    height: 18
   connections:
   - {fileID: 114424008213374286}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -303,10 +303,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 542
-    y: 185.5
-    width: 108
-    height: 17
+    x: 535.79956
+    y: 285.70004
+    width: 111
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114321802465754818
@@ -324,10 +324,10 @@ MonoBehaviour:
   body: {fileID: 114496111484046938}
   rect:
     serializedVersion: 2
-    x: 11.5
-    y: 655.5
-    width: 143
-    height: 17
+    x: 8.300079
+    y: 750.70044
+    width: 147
+    height: 18
   connection: {fileID: 0}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114370556946856816
@@ -345,10 +345,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 542
-    y: 204.5
-    width: 108
-    height: 17
+    x: 535.79956
+    y: 305.70004
+    width: 111
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114378183407615398
@@ -366,10 +366,10 @@ MonoBehaviour:
   body: {fileID: 114455129295374188}
   rect:
     serializedVersion: 2
-    x: 487.5
-    y: 670.5
-    width: 143
-    height: 17
+    x: 484.29953
+    y: 765.70056
+    width: 147
+    height: 18
   connection: {fileID: 114910048022607164}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114382580904733832
@@ -386,10 +386,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 12
-    y: 17.5
-    width: 350
-    height: 554
+    x: 8.800079
+    y: 112.70004
+    width: 401
+    height: 559
   Inputs:
   - {fileID: 114422225231755106}
   Outputs:
@@ -405,7 +405,7 @@ MonoBehaviour:
   speakerImages:
   - {fileID: 0}
   dialogues:
-  - Hey, go to this place and kill some of them logs for me.
+  - The Log Monsters are blocking our path out, please clear them out!
   styles:
   - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
@@ -430,10 +430,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 542
-    y: 261.5
-    width: 108
-    height: 17
+    x: 535.79956
+    y: 365.70004
+    width: 111
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114422225231755106
@@ -451,10 +451,10 @@ MonoBehaviour:
   body: {fileID: 114382580904733832}
   rect:
     serializedVersion: 2
-    x: 12
-    y: 59.5
-    width: 143
-    height: 17
+    x: 8.800079
+    y: 154.70004
+    width: 147
+    height: 18
   connection: {fileID: 0}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114424008213374286
@@ -472,10 +472,10 @@ MonoBehaviour:
   body: {fileID: 114173372623904142}
   rect:
     serializedVersion: 2
-    x: 938.5
-    y: 792.5
-    width: 143
-    height: 17
+    x: 935.29895
+    y: 887.7001
+    width: 147
+    height: 18
   connection: {fileID: 114299010747470932}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114432245329043768
@@ -493,10 +493,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 543
-    y: 109.5
-    width: 107
-    height: 17
+    x: 536.79956
+    y: 205.70004
+    width: 110
+    height: 18
   connections:
   - {fileID: 114878893805484968}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -514,8 +514,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 487.5
-    y: 628.5
+    x: 484.29953
+    y: 723.70056
     width: 350
     height: 498
   Inputs:
@@ -533,7 +533,7 @@ MonoBehaviour:
   speakerImages:
   - {fileID: 0}
   dialogues:
-  - Go to this place and kill flame lizards.
+  - Clear out the logs in the area!
   styles:
   - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
@@ -572,10 +572,10 @@ MonoBehaviour:
   body: {fileID: 114760681348009470}
   rect:
     serializedVersion: 2
-    x: 17.5
-    y: 1172.5
-    width: 143
-    height: 17
+    x: 14.30014
+    y: 1267.7004
+    width: 147
+    height: 18
   connection: {fileID: 0}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114490896831244342
@@ -593,10 +593,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 495
-    y: 65.5
+    x: 491.79953
+    y: 160.70004
     width: 151
-    height: 17
+    height: 18
   connection: {fileID: 114740659114728958}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114492867140662806
@@ -614,10 +614,10 @@ MonoBehaviour:
   body: {fileID: 114089189533961400}
   rect:
     serializedVersion: 2
-    x: 1418
-    y: 45.5
-    width: 120
-    height: 17
+    x: 1411.7993
+    y: 140.70004
+    width: 123
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114496111484046938
@@ -634,10 +634,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 11.5
-    y: 613.5
+    x: 8.300079
+    y: 708.70044
     width: 350
-    height: 525
+    height: 530
   Inputs:
   - {fileID: 114321802465754818}
   Outputs:
@@ -696,10 +696,10 @@ MonoBehaviour:
   body: {fileID: 114760681348009470}
   rect:
     serializedVersion: 2
-    x: 247.5
-    y: 1172.5
-    width: 120
-    height: 17
+    x: 241.30014
+    y: 1267.7004
+    width: 123
+    height: 18
   connections:
   - {fileID: 114261657743085000}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -718,10 +718,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 542
-    y: 242.5
-    width: 108
-    height: 17
+    x: 535.79956
+    y: 345.70004
+    width: 111
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114740659114728958
@@ -739,10 +739,10 @@ MonoBehaviour:
   body: {fileID: 114382580904733832}
   rect:
     serializedVersion: 2
-    x: 242
-    y: 59.5
-    width: 120
-    height: 17
+    x: 286.80008
+    y: 154.70004
+    width: 123
+    height: 18
   connections:
   - {fileID: 114490896831244342}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -760,10 +760,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 17.5
-    y: 1130.5
+    x: 14.30014
+    y: 1225.7004
     width: 350
-    height: 525
+    height: 530
   Inputs:
   - {fileID: 114475949370251688}
   Outputs:
@@ -779,7 +779,7 @@ MonoBehaviour:
   speakerImages:
   - {fileID: 0}
   dialogues:
-  - Job's done.
+  - Area is clear!
   styles:
   - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
@@ -822,10 +822,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 542
-    y: 128.5
-    width: 108
-    height: 17
+    x: 535.79956
+    y: 225.70004
+    width: 111
+    height: 18
   connections:
   - {fileID: 114845834959199582}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -844,10 +844,10 @@ MonoBehaviour:
   body: {fileID: 114113850668703152}
   rect:
     serializedVersion: 2
-    x: 752
-    y: 152
-    width: 143
-    height: 17
+    x: 748.7991
+    y: 247.20001
+    width: 147
+    height: 18
   connection: {fileID: 114812942442755854}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114859120140942640
@@ -864,10 +864,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 504
-    y: 1131.5
+    x: 500.79977
+    y: 1226.7004
     width: 350
-    height: 509
+    height: 514
   Inputs:
   - {fileID: 114261657743085000}
   Outputs:
@@ -883,7 +883,7 @@ MonoBehaviour:
   speakerImages:
   - {fileID: 0}
   dialogues:
-  - Awesome! Thanks.
+  - Awesome! Thanks. We can move onto the new area now.
   styles:
   - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
@@ -907,10 +907,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 495
-    y: 23.5
+    x: 491.79953
+    y: 118.70004
     width: 155
-    height: 259
+    height: 269
   Inputs:
   - {fileID: 114490896831244342}
   Outputs:
@@ -947,10 +947,10 @@ MonoBehaviour:
   body: {fileID: 114089189533961400}
   rect:
     serializedVersion: 2
-    x: 1188
-    y: 45.5
-    width: 143
-    height: 17
+    x: 1184.7993
+    y: 140.70004
+    width: 147
+    height: 18
   connection: {fileID: 114432245329043768}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114910048022607164
@@ -968,10 +968,10 @@ MonoBehaviour:
   body: {fileID: 114496111484046938}
   rect:
     serializedVersion: 2
-    x: 241.5
-    y: 655.5
-    width: 120
-    height: 17
+    x: 235.30008
+    y: 750.70044
+    width: 123
+    height: 18
   connections:
   - {fileID: 114378183407615398}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -990,10 +990,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 542
-    y: 223.5
-    width: 108
-    height: 17
+    x: 535.79956
+    y: 325.70004
+    width: 111
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114918522400440920
@@ -1011,10 +1011,10 @@ MonoBehaviour:
   body: {fileID: 114862395419036130}
   rect:
     serializedVersion: 2
-    x: 541
-    y: 147.5
-    width: 109
-    height: 17
+    x: 534.79956
+    y: 245.70004
+    width: 112
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &114993222373993344
@@ -1032,9 +1032,9 @@ MonoBehaviour:
   body: {fileID: 114173372623904142}
   rect:
     serializedVersion: 2
-    x: 1168.5
-    y: 792.5
-    width: 120
-    height: 17
+    x: 1162.299
+    y: 887.7001
+    width: 123
+    height: 18
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
