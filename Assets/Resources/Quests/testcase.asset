@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8051ad29762a9e4bac28d409d693033, type: 3}
+<<<<<<<< Updated upstream:Assets/Resources/Quests/testcase.asset
   m_Name: testcase
   m_EditorClassIdentifier: 
   questName: testcase
+========
+  m_Name: Test Quest
+  m_EditorClassIdentifier: 
+  questName: Test Quest
+>>>>>>>> Stashed changes:Assets/Resources/Quests/Test Quest.asset
   questGiver: {fileID: 1269463871297686, guid: 2a36daffaaaf2f64c9802bc58afa6980, type: 3}

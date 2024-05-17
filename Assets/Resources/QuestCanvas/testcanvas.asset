@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream:Assets/Resources/QuestCanvas/testcanvas.asset
 --- !u!114 &-7660920132311969632
+=======
+--- !u!114 &-6813635498468291448
+>>>>>>> Stashed changes:Assets/Resources/QuestCanvas/test.asset
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,16 +16,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8540dc606510f764aa58ec26b6a1348b, type: 3}
   m_Name: Next Dialogue State
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Resources/QuestCanvas/testcanvas.asset
   body: {fileID: 4803447138116996249}
   rect:
     serializedVersion: 2
     x: 1298
     y: -194.5
+=======
+  body: {fileID: 4562224460203112901}
+  rect:
+    serializedVersion: 2
+    x: 704
+    y: 250
+>>>>>>> Stashed changes:Assets/Resources/QuestCanvas/test.asset
     width: 120
     height: 17
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+<<<<<<< Updated upstream:Assets/Resources/QuestCanvas/testcanvas.asset
 --- !u!114 &-6295252871135339639
+=======
+--- !u!114 &-4371208873922951015
+>>>>>>> Stashed changes:Assets/Resources/QuestCanvas/test.asset
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,6 +46,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream:Assets/Resources/QuestCanvas/testcanvas.asset
   m_Script: {fileID: 11500000, guid: 8540dc606510f764aa58ec26b6a1348b, type: 3}
   m_Name: Dialogue Option 2
   m_EditorClassIdentifier: 
@@ -211,6 +228,20 @@ MonoBehaviour:
   reject: 1
   turnInQuest: 0
   inProgressDialogue: 0
+=======
+  m_Script: {fileID: 11500000, guid: bfd9b948f4e135e4a8f0a97ec36511d4, type: 3}
+  m_Name: Previous Dialogue State
+  m_EditorClassIdentifier: 
+  body: {fileID: 4562224460203112901}
+  rect:
+    serializedVersion: 2
+    x: 474
+    y: 250
+    width: 143
+    height: 17
+  connection: {fileID: 0}
+  type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+>>>>>>> Stashed changes:Assets/Resources/QuestCanvas/test.asset
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +252,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4302bd4f18e0e44492dfe8de3e05c5e, type: 3}
+<<<<<<< Updated upstream:Assets/Resources/QuestCanvas/testcanvas.asset
   m_Name: testcanvas
   m_EditorClassIdentifier: 
   nodes:
@@ -266,6 +298,25 @@ MonoBehaviour:
   connections: []
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 --- !u!114 &1507282774177999067
+=======
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 4562224460203112901}
+  choiceNodes: []
+  choiceNodeNames: []
+  requiredGameStateSelections: 
+  scrollOffset: {x: 0, y: 0}
+  zoom: 2
+  questName: Test
+  questObjectives: []
+  objectivePaths: []
+  numberOfObjectivesToCollect: 
+  requiredQuests: []
+  newQuest: {fileID: 11400000, guid: fedeb0bd8a3d0134da4447a2f17014ef, type: 2}
+  questGiver: {fileID: 1611766483522690, guid: e980799e1ae36f7468f2e975cfc635d3, type: 3}
+--- !u!114 &4562224460203112901
+>>>>>>> Stashed changes:Assets/Resources/QuestCanvas/test.asset
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,6 +326,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: feb0f64701774fb4d9c8f8aa364070d2, type: 3}
+<<<<<<< Updated upstream:Assets/Resources/QuestCanvas/testcanvas.asset
   m_Name: State 4
   m_EditorClassIdentifier: 
   rect:
@@ -288,12 +340,28 @@ MonoBehaviour:
   Outputs:
   - {fileID: 7556239460876148584}
   state: 4
+=======
+  m_Name: State 1
+  m_EditorClassIdentifier: 
+  rect:
+    serializedVersion: 2
+    x: 474
+    y: 208
+    width: 350
+    height: 496
+  Inputs:
+  - {fileID: -4371208873922951015}
+  Outputs:
+  - {fileID: -6813635498468291448}
+  state: 1
+>>>>>>> Stashed changes:Assets/Resources/QuestCanvas/test.asset
   description: 
   expanded: 1
   isStartState: 1
   isFinalState: 1
   previousChoiceNode: {fileID: 0}
   speakers:
+<<<<<<< Updated upstream:Assets/Resources/QuestCanvas/testcanvas.asset
   - {fileID: 1269463871297686, guid: 2a36daffaaaf2f64c9802bc58afa6980, type: 3}
   speakerImages:
   - {fileID: 0}
@@ -658,3 +726,19 @@ MonoBehaviour:
   connections:
   - {fileID: 2315582353436761240}
   type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+=======
+  - {fileID: 1611766483522690, guid: e980799e1ae36f7468f2e975cfc635d3, type: 3}
+  speakerImages:
+  - {fileID: 0}
+  dialogues:
+  - Test
+  styles:
+  - {fileID: 21300000, guid: 9760ff8e6976ada48944d97aafc904ca, type: 3}
+  transitions: 
+  playerInitiatesConversation: 1
+  returnsToChoiceNode: 0
+  accept: 0
+  reject: 0
+  turnInQuest: 0
+  inProgressDialogue: 0
+>>>>>>> Stashed changes:Assets/Resources/QuestCanvas/test.asset

@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class EnemyObjective : QuestObjective
 {
+<<<<<<< Updated upstream
     private EnemyLog enemy;
     private int numberToCollect;
     private GameObject questGiver;
@@ -52,6 +53,39 @@ public class EnemyObjective : QuestObjective
             {
                 CompleteObjective();
             }
+=======
+    public EnemyLog enemy;
+    public int numberToKill;
+    private int killCount;
+    private bool isComplete;
+
+    public EnemyObjective(EnemyLog enemy, int numberToKill, GameObject questGiver)
+    {
+        this.enemy = enemy;
+        this.numberToKill = numberToKill;
+        this.killCount = 0;
+        this.isComplete = false;
+    }
+
+    public void EnemyKilled()
+    {
+        killCount++;
+        if (killCount >= numberToKill)
+        {
+            CompleteObjective();
+        }
+    }
+
+    private void CompleteObjective()
+    {
+        isComplete = true;
+        objectiveActive = false;
+
+        // Activate the next objective if it exists
+        if (nextObjective != null)
+        {
+            nextObjective.SetActiveObjective();
+>>>>>>> Stashed changes
         }
     }
 
@@ -88,6 +122,7 @@ public class EnemyObjective : QuestObjective
     public override bool IsComplete()
     {
         return isComplete;
+<<<<<<< Updated upstream
     }
 
     /// <summary>
@@ -132,5 +167,29 @@ public class EnemyObjective : QuestObjective
     public override void SetNextObjective(QuestObjective newNextObjective)
     {
         nextObjective = newNextObjective;
+=======
+>>>>>>> Stashed changes
+    }
+
+    public override void InitializeObjective()
+    {
+        killCount = 0;
+        isComplete = false;
+        objectiveActive = true;
+    }
+
+    public override void CleanupObjective()
+    {
+        // Cleanup logic if needed
+    }
+
+    public override string GetObjectiveDescription()
+    {
+        return $"Kill {numberToKill} {enemy.enemyName} (Killed: {killCount}/{numberToKill})";
+    }
+
+    public override GameObject GetObjectiveObject()
+    {
+        return enemy.gameObject;
     }
 }

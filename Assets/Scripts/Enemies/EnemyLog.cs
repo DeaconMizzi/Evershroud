@@ -12,9 +12,14 @@ public enum EnemyState
     stagger
 }
 
+<<<<<<< Updated upstream
 
 public class EnemyLog : MonoBehaviour {
 
+=======
+public class EnemyLog : MonoBehaviour
+{
+>>>>>>> Stashed changes
     public EnemyState currentState;
     public FloatValue maxHealth;
     public float health;
@@ -23,19 +28,28 @@ public class EnemyLog : MonoBehaviour {
     public float moveSpeed;
     public int enemycount = 9;
     public AudioSource swordhit;
+<<<<<<< Updated upstream
 
+=======
+    protected bool isDead = false;
+>>>>>>> Stashed changes
 
     private void Awake()
     {
         health = maxHealth.initialValue;
     }
+<<<<<<< Updated upstream
     
+=======
+
+>>>>>>> Stashed changes
     private void Start()
     {
         health = maxHealth.initialValue;
         swordhit = GetComponent<AudioSource>();
     }
 
+<<<<<<< Updated upstream
     private void TakeDamage(float damage)
     {
         health -= damage;
@@ -50,6 +64,29 @@ public class EnemyLog : MonoBehaviour {
         }
     }
 
+=======
+    internal virtual void TakeDamage(float damage)
+    {
+        health -= damage;
+        swordhit.Play();
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        if (QuestHandler.Instance != null)
+        {
+            QuestHandler.Instance.NotifyEnemyKilled(enemyName);
+        }
+        Destroy(gameObject);
+        ScoreScript.scoreValue += 1;
+    }
+
+>>>>>>> Stashed changes
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -57,6 +94,10 @@ public class EnemyLog : MonoBehaviour {
             PlayerMovement.playerhealth -= 1;
         }
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     public void Knock(Rigidbody2D myRigidbody, float knocktime, float damage)
     {
         StartCoroutine(KnockCo(myRigidbody, knocktime));
@@ -76,7 +117,11 @@ public class EnemyLog : MonoBehaviour {
 
     void Update()
     {
+<<<<<<< Updated upstream
         
     }
 
+=======
+    }
+>>>>>>> Stashed changes
 }
