@@ -35,14 +35,14 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if (string.IsNullOrEmpty(enemy.EnemyName))
+        if (string.IsNullOrEmpty(enemy.enemyName))
         {
             Debug.LogError("Enemy name is null or empty.");
         }
         else
         {
             // Handle enemy killed event, update score, etc.
-            Debug.Log($"Enemy killed: {enemy.EnemyName}");
+            Debug.Log($"Enemy killed: {enemy.enemyName}");
             // Update your game state, score, etc. here
         }
     }

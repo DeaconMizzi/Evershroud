@@ -34,19 +34,20 @@ public class EnemyObjective : QuestObjective
     public override void InitializeObjective()
     {
         Messenger.AddListener<EnemyLog>("Enemy Killed", OnEnemyKilled);
-        Debug.Log($"Objective initialized: Kill {initialCount} of {enemy.EnemyName}");
+        Debug.Log($"Objective initialized: Kill {initialCount} of {enemy.enemyName}");
     }
 
     /// <summary>
     /// Called when an enemy is killed.
     /// </summary>
     /// <param name="killedEnemy">The killed enemy.</param>
-    private void OnEnemyKilled(EnemyLog killedEnemy)
+    /// <param name="enemyName">enemy name</param>
+    private void OnEnemyKilled(EnemyLog enemyName)
     {
-        if (killedEnemy.EnemyName == enemy.EnemyName && objectiveActive)
+        if (objectiveActive)
         {
             numberToCollect--;
-            Debug.Log($"Enemy killed: {killedEnemy.EnemyName}. Remaining: {numberToCollect}");
+            Debug.Log($"Enemy killed: {enemy.enemyName}. Remaining: {numberToCollect}");
             if (numberToCollect <= 0)
             {
                 CompleteObjective();
@@ -59,7 +60,7 @@ public class EnemyObjective : QuestObjective
     /// </summary>
     private void CompleteObjective()
     {
-        Debug.Log($"Objective completed: {enemy.EnemyName} has been killed.");
+        Debug.Log($"Objective completed: {enemy.enemyName} has been killed.");
         isComplete = true;
         objectiveActive = false;
 
@@ -95,7 +96,7 @@ public class EnemyObjective : QuestObjective
     /// <returns>The objective description.</returns>
     public override string GetObjectiveDescription()
     {
-        return $"Kill {initialCount} of {enemy.EnemyName} (Remaining: {numberToCollect})";
+        return $"Kill {initialCount} of {enemy.enemyName} (Remaining: {numberToCollect})";
     }
 
     /// <summary>

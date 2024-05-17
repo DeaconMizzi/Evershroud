@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public enum EnemyState
 {
@@ -10,70 +12,41 @@ public enum EnemyState
     stagger
 }
 
-public class EnemyLog : MonoBehaviour
-{
-    [SerializeField]
-    protected EnemyState currentState;
-    [SerializeField]
-    protected FloatValue maxHealth;
-    [SerializeField]
-    protected float health;
-    [SerializeField]
-    private string enemyName; // Changed to private
-    [SerializeField]
-    protected int baseDamage;
-    [SerializeField]
-    protected float moveSpeed;
-    [SerializeField]
-    protected int enemycount = 9;
-    [SerializeField]
-    protected AudioSource swordhit;
 
-    public EnemyState CurrentState
-    {
-        get { return currentState; }
-        set { currentState = value; }
-    }
+public class EnemyLog : MonoBehaviour {
 
-    public string EnemyName
-    {
-        get { return enemyName; }
-        set { enemyName = value; }
-    }
+    public EnemyState currentState;
+    public FloatValue maxHealth;
+    public float health;
+    public string enemyName;
+    public int baseDamage;
+    public float moveSpeed;
+    public int enemycount = 9;
+    public AudioSource swordhit;
+
 
     private void Awake()
     {
         health = maxHealth.initialValue;
-        // Mark the "Enemy Killed" message as permanent
-        Messenger.MarkAsPermanent("Enemy Killed");
     }
-
+    
     private void Start()
     {
         health = maxHealth.initialValue;
         swordhit = GetComponent<AudioSource>();
-        // Debug log to check initialization
-        Debug.Log($"Initialized enemy: {enemyName}");
-    }
-
-    public void Initialize(string name)
-    {
-        enemyName = name;
-        Debug.Log($"Enemy name set to: {enemyName}");
     }
 
     private void TakeDamage(float damage)
     {
         health -= damage;
         swordhit.Play();
-
+      
         if (health <= 0)
         {
-            Debug.Log($"Enemy {enemyName} is about to be killed.");
-            Messenger.Broadcast<EnemyLog>("Enemy Killed", this);
-            enemycount = enemycount - 1;
-            Destroy(this.gameObject);
+            enemycount -= 1;
+            Destroy(gameObject);
             ScoreScript.scoreValue += 1;
+            
         }
     }
 
@@ -84,15 +57,10 @@ public class EnemyLog : MonoBehaviour
             PlayerMovement.playerhealth -= 1;
         }
     }
-
-    public void Knock(GameObject hit, float knocktime, float damage)
+    public void Knock(Rigidbody2D myRigidbody, float knocktime, float damage)
     {
-        Rigidbody2D myRigidbody = hit.GetComponent<Rigidbody2D>();
-        if (myRigidbody != null)
-        {
-            StartCoroutine(KnockCo(myRigidbody, knocktime));
-            TakeDamage(damage);
-        }
+        StartCoroutine(KnockCo(myRigidbody, knocktime));
+        TakeDamage(damage);
     }
 
     private IEnumerator KnockCo(Rigidbody2D myRigidbody, float knocktime)
@@ -108,9 +76,7 @@ public class EnemyLog : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            Messenger.Broadcast<EnemyLog>("Enemy Killed", this);
-        }
+        
     }
+
 }

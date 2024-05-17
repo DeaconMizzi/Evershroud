@@ -15,8 +15,8 @@ MonoBehaviour:
   body: {fileID: -4683603685029372727}
   rect:
     serializedVersion: 2
-    x: 754.00024
-    y: 471.19995
+    x: 1210.0002
+    y: -116.30005
     width: 143
     height: 17
   connection: {fileID: 114606157578655072}
@@ -36,8 +36,8 @@ MonoBehaviour:
   body: {fileID: -4683603685029372727}
   rect:
     serializedVersion: 2
-    x: 984.00024
-    y: 471.19995
+    x: 1440.0002
+    y: -116.30005
     width: 120
     height: 17
   connections: []
@@ -56,8 +56,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 754.00024
-    y: 429.19995
+    x: 1210.0002
+    y: -158.30005
     width: 350
     height: 519
   Inputs:
@@ -77,7 +77,7 @@ MonoBehaviour:
   dialogues:
   - Yea, we need to remove the logs!
   styles:
-  - {fileID: 21300000, guid: ad6cc4bf192accd4c91f3cea39991d8f, type: 3}
+  - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
   playerInitiatesConversation: 0
   returnsToChoiceNode: 0
@@ -96,8 +96,8 @@ MonoBehaviour:
   body: {fileID: -429039590636758506}
   rect:
     serializedVersion: 2
-    x: 895.2001
-    y: 1033.6002
+    x: 1351.2001
+    y: 446.10022
     width: 120
     height: 17
   connections: []
@@ -116,8 +116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 665.2001
-    y: 991.6002
+    x: 1121.2001
+    y: 404.10022
     width: 350
     height: 519
   Inputs:
@@ -137,7 +137,7 @@ MonoBehaviour:
   dialogues:
   - You're Crazy! Leave me alone!
   styles:
-  - {fileID: 21300000, guid: ad6cc4bf192accd4c91f3cea39991d8f, type: 3}
+  - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
   playerInitiatesConversation: 0
   returnsToChoiceNode: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   choiceNodeNames:
   - Choice State 1
   requiredGameStateSelections: 
-  scrollOffset: {x: -686.3003, y: 415.69983}
+  scrollOffset: {x: -230.3003, y: -171.80017}
   zoom: 2
   numberOfTimesConversationCanHappen: -1
   probabilityOfOccurrence: 1
@@ -184,8 +184,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 16.700317
-    y: 743.19995
+    x: 472.70032
+    y: 155.69995
     width: 108
     height: 17
   connections: []
@@ -205,8 +205,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 15.700317
-    y: 686.19995
+    x: 471.70032
+    y: 98.69995
     width: 109
     height: 17
   connections: []
@@ -226,8 +226,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 16.700317
-    y: 781.19995
+    x: 472.70032
+    y: 193.69995
     width: 108
     height: 17
   connections: []
@@ -247,8 +247,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 16.700317
-    y: 800.19995
+    x: 472.70032
+    y: 212.69995
     width: 108
     height: 17
   connections: []
@@ -268,8 +268,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 15.700317
-    y: 705.19995
+    x: 471.70032
+    y: 117.69995
     width: 109
     height: 17
   connections: []
@@ -289,8 +289,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 16.700317
-    y: 667.19995
+    x: 472.70032
+    y: 79.69995
     width: 108
     height: 17
   connections:
@@ -311,8 +311,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 17.700317
-    y: 648.19995
+    x: 473.70032
+    y: 60.69995
     width: 107
     height: 17
   connections:
@@ -332,8 +332,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 164.70032
-    y: 996.3992
+    x: 620.7003
+    y: 408.89917
     width: 350
     height: 535
   Inputs:
@@ -353,7 +353,7 @@ MonoBehaviour:
   dialogues:
   - I kinda like it here...
   styles:
-  - {fileID: 21300000, guid: 9760ff8e6976ada48944d97aafc904ca, type: 3}
+  - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
   playerInitiatesConversation: 0
   returnsToChoiceNode: 0
@@ -371,8 +371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: -30.299683
-    y: 562.19995
+    x: 425.70032
+    y: -25.300049
     width: 155
     height: 269
   Inputs:
@@ -408,8 +408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: 282.1006
-    y: 413.39966
+    x: 738.1006
+    y: -174.10034
     width: 350
     height: 560
   Inputs:
@@ -429,7 +429,7 @@ MonoBehaviour:
   dialogues:
   - Yea, we need to get out of the forest!
   styles:
-  - {fileID: 21300000, guid: ad6cc4bf192accd4c91f3cea39991d8f, type: 3}
+  - {fileID: 21300000, guid: f3249c4e4fcf3214981bd6e2ecbc6651, type: 3}
   transitions: 
   playerInitiatesConversation: 0
   returnsToChoiceNode: 0
@@ -469,8 +469,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: -30.299683
-    y: 604.19995
+    x: 425.70032
+    y: 16.699951
     width: 151
     height: 17
   connection: {fileID: 114624040625136060}
@@ -490,8 +490,8 @@ MonoBehaviour:
   body: {fileID: 114479115778306410}
   rect:
     serializedVersion: 2
-    x: 512.1006
-    y: 455.39966
+    x: 968.1006
+    y: -132.10034
     width: 120
     height: 17
   connections:
@@ -533,8 +533,8 @@ MonoBehaviour:
   body: {fileID: 114879259582809302}
   rect:
     serializedVersion: 2
-    x: -326.2998
-    y: 604.69995
+    x: 129.7002
+    y: 17.199951
     width: 120
     height: 17
   connections:
@@ -555,8 +555,8 @@ MonoBehaviour:
   body: {fileID: 114417895154879844}
   rect:
     serializedVersion: 2
-    x: 164.70032
-    y: 1038.3992
+    x: 620.7003
+    y: 450.89917
     width: 143
     height: 17
   connection: {fileID: 114335311958679700}
@@ -576,8 +576,8 @@ MonoBehaviour:
   body: {fileID: 114417895154879844}
   rect:
     serializedVersion: 2
-    x: 394.70032
-    y: 1038.3992
+    x: 850.7003
+    y: 450.89917
     width: 120
     height: 17
   connections:
@@ -598,8 +598,8 @@ MonoBehaviour:
   body: {fileID: 114479115778306410}
   rect:
     serializedVersion: 2
-    x: 282.1006
-    y: 455.39966
+    x: 738.1006
+    y: -132.10034
     width: 143
     height: 17
   connection: {fileID: 114378314564181746}
@@ -619,8 +619,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 16.700317
-    y: 724.19995
+    x: 472.70032
+    y: 136.69995
     width: 108
     height: 17
   connections: []
@@ -640,8 +640,8 @@ MonoBehaviour:
   body: {fileID: 114879259582809302}
   rect:
     serializedVersion: 2
-    x: -556.2998
-    y: 604.69995
+    x: -100.299805
+    y: 17.199951
     width: 143
     height: 17
   connection: {fileID: 0}
@@ -661,8 +661,8 @@ MonoBehaviour:
   body: {fileID: 114437930239034502}
   rect:
     serializedVersion: 2
-    x: 16.700317
-    y: 762.19995
+    x: 472.70032
+    y: 174.69995
     width: 108
     height: 17
   connections: []
@@ -681,8 +681,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect:
     serializedVersion: 2
-    x: -556.2998
-    y: 562.69995
+    x: -100.299805
+    y: -24.800049
     width: 350
     height: 519
   Inputs:
@@ -702,7 +702,7 @@ MonoBehaviour:
   dialogues:
   - We need to get out of here!
   styles:
-  - {fileID: 21300000, guid: 9760ff8e6976ada48944d97aafc904ca, type: 3}
+  - {fileID: 21300000, guid: 62b0ee7da810e6c41b25f9c334562be0, type: 3}
   transitions: 
   playerInitiatesConversation: 1
   returnsToChoiceNode: 0
@@ -721,8 +721,8 @@ MonoBehaviour:
   body: {fileID: -429039590636758506}
   rect:
     serializedVersion: 2
-    x: 665.2001
-    y: 1033.6002
+    x: 1121.2001
+    y: 446.10022
     width: 143
     height: 17
   connection: {fileID: 114705373386764464}
