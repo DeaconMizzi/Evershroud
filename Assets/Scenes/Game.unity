@@ -6235,7 +6235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611766483522690, guid: e980799e1ae36f7468f2e975cfc635d3, type: 3}
       propertyPath: m_Name
-      value: NPCMegaMan
+      value: NPCJimmy
       objectReference: {fileID: 0}
     - target: {fileID: 4811843409823420, guid: e980799e1ae36f7468f2e975cfc635d3, type: 3}
       propertyPath: m_LocalPosition.x

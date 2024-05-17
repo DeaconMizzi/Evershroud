@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "NodeBasedQuestEditor-master.sln"
+    "dotnet.defaultSolution": "Evershroud.sln"
 }
