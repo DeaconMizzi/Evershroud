@@ -12,9 +12,8 @@ public enum EnemyState
     stagger
 }
 
-
-public class EnemyLog : MonoBehaviour {
-
+public class EnemyLog : MonoBehaviour
+{
     public EnemyState currentState;
     public FloatValue maxHealth;
     public float health;
@@ -24,12 +23,11 @@ public class EnemyLog : MonoBehaviour {
     public int enemycount = 9;
     public AudioSource swordhit;
 
-
     private void Awake()
     {
         health = maxHealth.initialValue;
     }
-    
+
     private void Start()
     {
         health = maxHealth.initialValue;
@@ -40,26 +38,35 @@ public class EnemyLog : MonoBehaviour {
     {
         health -= damage;
         swordhit.Play();
-      
+
         if (health <= 0)
         {
             enemycount -= 1;
             Destroy(gameObject);
             ScoreScript.scoreValue += 1;
-            
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
+{
+    // Optional — keep it for initial hit damage
+    if (collision.gameObject.tag == "Player")
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            PlayerMovement.playerhealth -= 1;
-        }
+        PlayerMovement.playerhealth -= 1;
     }
-    public void Knock(Rigidbody2D myRigidbody, float knocktime, float damage)
+}
+
+
+    // ✅ UPDATED Knock method to include direction-based knockback
+    public void Knock(Rigidbody2D myRigidbody, float knocktime, float damage, Vector2 direction)
     {
-        StartCoroutine(KnockCo(myRigidbody, knocktime));
+        if (myRigidbody != null)
+        {
+            myRigidbody.velocity = Vector2.zero;
+            myRigidbody.AddForce(direction.normalized * 5f, ForceMode2D.Impulse); // Tune 5f as needed
+            StartCoroutine(KnockCo(myRigidbody, knocktime));
+        }
+
         TakeDamage(damage);
     }
 
@@ -70,13 +77,23 @@ public class EnemyLog : MonoBehaviour {
             yield return new WaitForSeconds(knocktime);
             myRigidbody.velocity = Vector2.zero;
             currentState = EnemyState.idle;
-            myRigidbody.velocity = Vector2.zero;
         }
     }
+    private void OnTriggerStay2D(Collider2D collision)
+{
+    if (collision.CompareTag("Player") && currentState != EnemyState.stagger)
+    {
+        PlayerMovement player = collision.GetComponent<PlayerMovement>();
+        if (player != null && player.currentstate != PlayerState.stagger)
+        {
+            Vector2 direction = (collision.transform.position - transform.position).normalized;
+            player.Knock(0.2f, baseDamage, direction);
+        }
+    }
+}
 
     void Update()
     {
         
     }
-
 }

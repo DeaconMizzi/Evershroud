@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Evershroud-Pre-Fix.sln"
+    "dotnet.defaultSolution": "Evershroud.sln"
 }

@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
 
     private GameManager gameManager;
 
-    // Use this for initialization
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -63,7 +62,6 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerDies();
             gameManager.Lose();
-
         }
 
         change = Vector3.zero;
@@ -74,9 +72,25 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(AttackCo());
         }
-        else if (currentstate == PlayerState.walk || currentstate == PlayerState.idle)
+
+        if (change != Vector3.zero)
         {
-            UpdateAnimationAndMove();
+            animator.SetFloat("moveX", change.x);
+            animator.SetFloat("moveY", change.y);
+            animator.SetBool("Moving", true);
+        }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if ((currentstate == PlayerState.walk || currentstate == PlayerState.idle) && change != Vector3.zero && !lockPlayerMovement)
+        {
+            change.Normalize();
+            myRigidbody.MovePosition(transform.position + change * (speed * Time.fixedDeltaTime));
         }
     }
 
@@ -108,31 +122,6 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("Attacking", false);
         yield return new WaitForSeconds(.3f);
         currentstate = PlayerState.walk;
-        //walkSource.Play();
-    }
-
-    void UpdateAnimationAndMove()
-    {
-        if (change != Vector3.zero)
-        {
-            MovePlayer();
-            animator.SetFloat("moveX", change.x);
-            animator.SetFloat("moveY", change.y);
-            animator.SetBool("Moving", true);
-        }
-        else
-        {
-            animator.SetBool("Moving", false);
-        }
-    }
-
-    void MovePlayer()
-    {
-        if (lockPlayerMovement)
-            return;
-
-        change.Normalize();
-        myRigidbody.MovePosition(transform.position + change * (speed * Time.deltaTime));
     }
 
     void LockPlayerMovement()
@@ -146,10 +135,14 @@ public class PlayerMovement : MonoBehaviour
         lockPlayerMovement = false;
     }
 
-    public void Knock(float knocktime, float damage)
+    // ✅ Updated knock method with direction-based force
+    public void Knock(float knocktime, float damage, Vector2 direction)
     {
         if (playerhealth > 0)
         {
+            myRigidbody.velocity = Vector2.zero;
+            myRigidbody.AddForce(direction.normalized * 5f, ForceMode2D.Impulse); // Tune knockback force
+            playerhealth -= (int)damage;
             StartCoroutine(KnockCo(knocktime));
         }
     }
@@ -162,7 +155,6 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = Vector2.zero;
             currentstate = PlayerState.idle;
             walkSource.Pause();
-            myRigidbody.velocity = Vector2.zero;
         }
     }
 

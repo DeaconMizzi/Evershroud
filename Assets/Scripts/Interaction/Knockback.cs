@@ -2,53 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Knockback : MonoBehaviour {
-
-    public float thrust;
-    public float knocktime;
-    public float damage;
-
-    // Use this for initialization
-    void Start () {
-		
-    }
-	
-    // Update is called once per frame
-    void Update () {
-		
-    }
+public class Knockback : MonoBehaviour
+{
+    public float thrust = 5f;
+    public float knocktime = 0.2f;
+    public float damage = 1f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = collision.GetComponent<Rigidbody2D>();
-            if(hit != null)
+            if (hit != null)
             {
-                Vector2 difference = (hit.transform.position - transform.position);
-                difference = difference.normalized * thrust;
-                hit.AddForce(difference, ForceMode2D.Impulse);
+                Vector2 difference = (hit.transform.position - transform.position).normalized;
 
+                // Knock enemy
                 if (collision.gameObject.CompareTag("Enemy") && collision.isTrigger)
                 {
-                    hit.GetComponent<EnemyLog>().currentState = EnemyState.stagger;
-                    collision.GetComponent<EnemyLog>().Knock(hit, knocktime, damage);
-                }
-                if (collision.gameObject.CompareTag("Player"))
-                {
-                    if (collision.GetComponent<PlayerMovement>().currentstate != PlayerState.stagger)
+                    hit.velocity = Vector2.zero;
+                    hit.AddForce(difference * thrust, ForceMode2D.Impulse);
+
+                    EnemyLog enemy = collision.GetComponent<EnemyLog>();
+                    if (enemy != null)
                     {
-                        hit.GetComponent<PlayerMovement>().currentstate = PlayerState.stagger;
-                        collision.GetComponent<PlayerMovement>().Knock(knocktime, damage);
+                        enemy.currentState = EnemyState.stagger;
+                        enemy.Knock(hit, knocktime, damage, difference); // New overload with direction
                     }
                 }
-                     
 
+                // Knock player
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    PlayerMovement player = collision.GetComponent<PlayerMovement>();
+                    if (player != null && player.currentstate != PlayerState.stagger)
+                    {
+                        hit.velocity = Vector2.zero;
+                        hit.AddForce(difference * thrust, ForceMode2D.Impulse);
+                        player.currentstate = PlayerState.stagger;
+                        player.Knock(knocktime, damage, difference);
 
-            }   
+                    }
+                }
+            }
         }
-
     }
-
-   
 }
