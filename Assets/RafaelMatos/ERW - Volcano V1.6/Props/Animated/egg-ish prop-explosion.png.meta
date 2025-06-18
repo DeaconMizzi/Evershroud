@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: ab520c48a4d6b0d4aa9d6a2273763e76
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c96a01eafbbfb4a8e3746cf27db724
+      internalID: 1492180281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5389f6644fe83694c9179d4c928a7183
+      internalID: 639768784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515b09f19cb85a64a94b814030b63b01
+      internalID: 162226041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_3
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b638034bbe93d154dacbc55d6ef398d1
+      internalID: -64027741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5295fde3d89728546accc95c1692ae4a
+      internalID: 2051397363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_5
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a34e33ef932624aa3e8750ea4fb785
+      internalID: -1979942493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_6
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0123b2f865f51248a2dfc68ad021545
+      internalID: -2111731283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_7
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6441e6ed0c9f4459f4d92aeef9554d
+      internalID: 1341326243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d94088f07797b247960b51b04daa903
+      internalID: -269601461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_9
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5420db403883a4042adc06d372a06112
+      internalID: 2135307263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_10
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc4d3c863fff6d4fa00bc7ac0cf106f
+      internalID: -1001059659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-explosion_11
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b458894ed3fe4540ad90097dea4a99e
+      internalID: -1866371010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      egg-ish prop-explosion_0: 1492180281
+      egg-ish prop-explosion_1: 639768784
+      egg-ish prop-explosion_10: -1001059659
+      egg-ish prop-explosion_11: -1866371010
+      egg-ish prop-explosion_2: 162226041
+      egg-ish prop-explosion_3: -64027741
+      egg-ish prop-explosion_4: 2051397363
+      egg-ish prop-explosion_5: -1979942493
+      egg-ish prop-explosion_6: -2111731283
+      egg-ish prop-explosion_7: 1341326243
+      egg-ish prop-explosion_8: -269601461
+      egg-ish prop-explosion_9: 2135307263
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

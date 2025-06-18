@@ -1,0 +1,12 @@
+Lava passage tilesets have two animations
+
+For simplicity, you can just use the 'lava passage' tileset only.
+
+If you want to have a revealing animation (like it was hidden and the passage shows after an event)
+then you must use the tileset 'the lava passage revealing anim' on top of the regular lava passage tileset.
+
+**If you are using TiledMap Editor, you'll have this automatic, meaning you just have to draw the regular tileset and
+the next one will be placed by the automapping on the layer 'lava passage revealing'
+In order to work the automapping for the second tileset, the layer in which you draw is called 'lava passage' and then
+the tiles with the revealing animation will be placed on the layer 'lava passage revealing'. You can change these layers by going
+to the tileset(.tsx) and changing the layer name target there

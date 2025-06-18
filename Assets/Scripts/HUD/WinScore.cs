@@ -12,7 +12,7 @@ public class WinScore : MonoBehaviour
     {
         scoreValue = PlayerPrefs.GetInt("score", ScoreScript.scoreValue);
         score = GetComponent<Text>();
-        score.text = "Your Final Score Is: " + scoreValue;
+        score.text = "Coins Collected: " + scoreValue;
     }
 
     // Update is called once per frame

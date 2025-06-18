@@ -1,0 +1,2 @@
+- ribs_0 is the top one and the ribs_4 is the lowest one (see mock up for reference)
+- This boss parts should be animated and connected using the game engine features

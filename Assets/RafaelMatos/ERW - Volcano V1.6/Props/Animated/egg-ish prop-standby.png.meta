@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: 4638525a97dd0854b8a017b5ca80f8da
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: egg-ish prop-standby_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de97ed2e0f0ff542a3cdafad78ba290
+      internalID: -1689001804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67ab18dd6ea74b4bbd1cc996e9474fc
+      internalID: 83548744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5276b90dd542b6c40b69b901b5250a2f
+      internalID: -2008567593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_3
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866b36a8a1daad74288692ba4c66dc4c
+      internalID: -1074505908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 320
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85db3cf31157e8d4c8a308e4c6798d3b
+      internalID: 1179558249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5464105995feebd439e65b1c00e79288
+      internalID: 1547102831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_6
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a5ca74f67479246986ac3ad9854beb
+      internalID: -685264134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_7
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebfaa73288e3964496582da09b51682
+      internalID: 189834612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_8
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74132d833f5321f46be1aa3224c49129
+      internalID: -1344170460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_9
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 160
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204f2cc8019e83b4dab3b9eb65eb137a
+      internalID: 421204149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg-ish prop-standby_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 188
+        height: 160
+      alignment: 9
+      pivot: {x: 0.487, y: 0.329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc12919afbd7094b88fd5c0de9a4ca5
+      internalID: -1911156074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      egg-ish prop-standby_0: -1689001804
+      egg-ish prop-standby_1: 83548744
+      egg-ish prop-standby_10: -1911156074
+      egg-ish prop-standby_2: -2008567593
+      egg-ish prop-standby_3: -1074505908
+      egg-ish prop-standby_4: 1179558249
+      egg-ish prop-standby_5: 1547102831
+      egg-ish prop-standby_6: -685264134
+      egg-ish prop-standby_7: 189834612
+      egg-ish prop-standby_8: -1344170460
+      egg-ish prop-standby_9: 421204149
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

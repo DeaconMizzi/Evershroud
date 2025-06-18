@@ -1,0 +1,1 @@
+The percentage version must be used on top of the complete portal. It will look like a radial progress bar.

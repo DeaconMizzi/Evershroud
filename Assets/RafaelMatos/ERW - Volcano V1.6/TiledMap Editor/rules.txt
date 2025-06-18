@@ -1,0 +1,12 @@
+Rules\plat-1-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\plat-1-rule1-places all tiles.tmx
+Rules\plat-1-rule2-applies variations.tmx
+
+Rules\plat-2-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\plat-2-rule1-places all tiles.tmx
+Rules\plat-2-rule2-applies variations.tmx
+
+Rules\tormented souls wall-places all tiles-all segments and levels.tmx
+
+Rules\lava passage revealing-rule0.tmx
+Rules\lava passage revealing-rule1.tmx

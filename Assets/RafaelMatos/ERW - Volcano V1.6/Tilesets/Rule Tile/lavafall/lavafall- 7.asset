@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: lavafall- 7
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 1176345598, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: -1907056196, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: -1263067676, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 815783797, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 72740669, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 1300884222, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 1886313897, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: -944724242, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: -1762049046, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 905831671, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 1806018397, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 721856480, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: -950275347, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: -616101436, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: 546584591, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  - {fileID: -1374416321, guid: 60d479674ce831b4eb34b05b5d047828, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

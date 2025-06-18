@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,14 +23,12 @@ public class GameManager : MonoBehaviour
 
     public void Win()
     {
-        Game.SetActive(false);
-        winGame.SetActive(true);
+        SceneManager.LoadScene("Win");
     }
     
     public void Lose()
     {
-        Game.SetActive(false);
-        loseGame.SetActive(true);
+        SceneManager.LoadScene("Lose");
     }
     private void OnEnable()
     {

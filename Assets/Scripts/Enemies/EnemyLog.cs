@@ -1,8 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public enum EnemyState
 {
@@ -14,6 +11,7 @@ public enum EnemyState
 
 public class EnemyLog : MonoBehaviour
 {
+    [Header("Base Stats")]
     public EnemyState currentState;
     public FloatValue maxHealth;
     public float health;
@@ -21,11 +19,19 @@ public class EnemyLog : MonoBehaviour
     public int baseDamage;
     public float moveSpeed;
     public int enemycount = 9;
+
+    [Header("FX")]
     public AudioSource swordhit;
+
+    protected bool isDead = false;
+    protected Animator anim;
+    protected Rigidbody2D rb;
 
     private void Awake()
     {
         health = maxHealth.initialValue;
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -34,36 +40,14 @@ public class EnemyLog : MonoBehaviour
         swordhit = GetComponent<AudioSource>();
     }
 
-    private void TakeDamage(float damage)
-    {
-        health -= damage;
-        swordhit.Play();
-
-        if (health <= 0)
-        {
-            enemycount -= 1;
-            Destroy(gameObject);
-            ScoreScript.scoreValue += 1;
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-{
-    // Optional — keep it for initial hit damage
-    if (collision.gameObject.tag == "Player")
-    {
-        PlayerMovement.playerhealth -= 1;
-    }
-}
-
-
-    // ✅ UPDATED Knock method to include direction-based knockback
     public void Knock(Rigidbody2D myRigidbody, float knocktime, float damage, Vector2 direction)
     {
+        if (isDead) return;
+
         if (myRigidbody != null)
         {
             myRigidbody.velocity = Vector2.zero;
-            myRigidbody.AddForce(direction.normalized * 5f, ForceMode2D.Impulse); // Tune 5f as needed
+            myRigidbody.AddForce(direction.normalized * 5f, ForceMode2D.Impulse);
             StartCoroutine(KnockCo(myRigidbody, knocktime));
         }
 
@@ -79,21 +63,60 @@ public class EnemyLog : MonoBehaviour
             currentState = EnemyState.idle;
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
-{
-    if (collision.CompareTag("Player") && currentState != EnemyState.stagger)
+
+    public virtual void TakeDamage(float damage)
     {
-        PlayerMovement player = collision.GetComponent<PlayerMovement>();
-        if (player != null && player.currentstate != PlayerState.stagger)
+        if (isDead) return;
+
+        health -= damage;
+        if (swordhit != null) swordhit.Play();
+
+        if (anim != null)
+            anim.SetTrigger("hurt");
+
+        if (health <= 0)
         {
-            Vector2 direction = (collision.transform.position - transform.position).normalized;
-            player.Knock(0.2f, baseDamage, direction);
+            StartCoroutine(DeathCo());
         }
     }
-}
 
-    void Update()
+    protected virtual IEnumerator DeathCo()
     {
-        
+        isDead = true;
+        currentState = EnemyState.stagger;
+
+        if (anim != null)
+        {
+            anim.SetTrigger("death");
+            yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length * 0.9f);
+            anim.speed = 0f; // freeze on last frame
+        }
+
+        GetComponent<Collider2D>().enabled = false;
+        enemycount -= 1;
+        ScoreScript.scoreValue += 1;
+
+        Destroy(gameObject); // default destroy
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            PlayerMovement.playerhealth -= 1;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && currentState != EnemyState.stagger)
+        {
+            PlayerMovement player = collision.GetComponent<PlayerMovement>();
+            if (player != null && player.currentstate != PlayerState.stagger)
+            {
+                Vector2 direction = (collision.transform.position - transform.position).normalized;
+                player.Knock(0.2f, baseDamage, direction);
+            }
+        }
     }
 }
